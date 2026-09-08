@@ -1,0 +1,50 @@
+{
+ "hard_requirements": {
+  "学历": "本科",
+  "经验年限": 0,
+  "专业限制": "统计学、数学、计算机科学、信息管理、数据科学",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [
+   "业务理解",
+   "数据分析",
+   "数据可视化",
+   "数据挖掘",
+   "数据清洗"
+  ],
+  "工具": [
+   "Excel",
+   "Hadoop",
+   "Hive",
+   "Power BI",
+   "Python",
+   "SQL",
+   "Spark",
+   "Tableau"
+  ],
+  "软技能": [
+   "协调",
+   "沟通"
+  ]
+ },
+ "evidence": {
+  "业务理解": "能够理解业务场景，将业务需求转化为数据提取分析方案。",
+  "数据分析": "负责分中心个性化数据分析的脚本开发。",
+  "数据可视化": "熟悉至少一种 BI 工具（如 Tableau、Power B",
+  "数据挖掘": "具备良好数据敏感度与逻辑思维，可识别数据异常并开展初步归因分",
+  "数据清洗": "掌握数据处理工具（如 Python/Pandas、Excel",
+  "Excel": "掌握数据处理工具（如 Python/Pandas、Excel",
+  "Hadoop": "具备数据库基础知识，熟悉 Hadoop。",
+  "Hive": "有大数据查询（Hive SQL/Spark SQL）经验者优",
+  "Power BI": "熟悉至少一种 BI 工具（如 Tableau、Power B",
+  "Python": "掌握数据处理工具（如 Python/Pandas、Excel",
+  "SQL": "精通 SQL 语言，能熟练编写复杂查询。",
+  "Spark": "有大数据查询（Hive SQL/Spark SQL）经验者优",
+  "Tableau": "熟悉至少一种 BI 工具（如 Tableau、Power B",
+  "协调": "具备良好沟通协调能力。",
+  "沟通": "具备良好沟通协调能力。"
+ },
+ "doc_id": "JD-001",
+ "doc_type": "jd"
+}

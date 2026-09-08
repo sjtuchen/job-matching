@@ -1,0 +1,44 @@
+{
+ "hard_requirements": {
+  "学历": "本科",
+  "经验年限": 0,
+  "专业限制": "",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [],
+  "工具": [
+   "CAD",
+   "CorelDRAW",
+   "Figma",
+   "Illustrator",
+   "MATLAB",
+   "Office",
+   "Power BI",
+   "Sketch",
+   "SolidWorks",
+   "Visio",
+   "Word"
+  ],
+  "软技能": [
+   "业务理解"
+  ]
+ },
+ "evidence": {
+  "CAD": "规划设计软硬件",
+  "CorelDRAW": "规划设计软硬件",
+  "Figma": "规划设计软硬件",
+  "Illustrator": "规划设计软硬件",
+  "MATLAB": "规划设计软硬件",
+  "Office": "规划设计软硬件",
+  "Power BI": "规划设计软硬件",
+  "Sketch": "规划设计软硬件",
+  "SolidWorks": "规划设计软硬件",
+  "Visio": "规划设计软硬件",
+  "Word": "规划设计软硬件",
+  "业务理解": "针对发酵生产/生物制造平台"
+ },
+ "doc_id": "BOSS-NEG-031",
+ "doc_type": "jd",
+ "_cleaned": "确定性清洗 5 词"
+}

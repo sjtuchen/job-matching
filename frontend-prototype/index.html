@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>智职图谱 · 求职适配诊断平台</title>
+  <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark" data-icon="graph"></span>
+        <div class="brand-text">
+          <strong>智职图谱</strong>
+          <span>求职适配诊断平台</span>
+        </div>
+      </div>
+
+      <div class="nav-section">
+        <p class="nav-label">工作台</p>
+        <nav class="side-nav">
+          <button class="nav-item active" data-view="upload">
+            <i class="nav-ico" data-icon="upload"></i>
+            <span>材料导入</span>
+            <em class="nav-dot done"></em>
+          </button>
+          <button class="nav-item" data-view="graph">
+            <i class="nav-ico" data-icon="graph"></i>
+            <span>能力图谱</span>
+            <em class="nav-state">25</em>
+          </button>
+          <button class="nav-item" data-view="match">
+            <i class="nav-ico" data-icon="match"></i>
+            <span>岗位匹配</span>
+            <em class="nav-state">3</em>
+          </button>
+          <button class="nav-item" data-view="path">
+            <i class="nav-ico" data-icon="route"></i>
+            <span>学习路线</span>
+          </button>
+          <button class="nav-item" data-view="report">
+            <i class="nav-ico" data-icon="report"></i>
+            <span>诊断报告</span>
+          </button>
+        </nav>
+      </div>
+
+    </aside>
+
+    <div class="scrim" id="scrim"></div>
+
+    <section class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="打开导航">
+          <i data-icon="menu"></i>
+        </button>
+        <div class="page-crumb">
+          <span>智职图谱</span>
+          <i>/</i>
+          <strong id="pageTitle">个人材料</strong>
+        </div>
+        <div class="topbar-spacer"></div>
+        <div class="top-progress" aria-label="流程进度">
+          <span class="flow-step done" data-step="upload">1 导入</span>
+          <i class="flow-line"></i>
+          <span class="flow-step" data-step="graph">2 图谱</span>
+          <i class="flow-line"></i>
+          <span class="flow-step" data-step="match">3 匹配</span>
+          <i class="flow-line"></i>
+          <span class="flow-step" data-step="path">4 路线</span>
+          <i class="flow-line"></i>
+          <span class="flow-step" data-step="report">5 报告</span>
+        </div>
+        <button class="ghost-btn" id="resetDemoBtn">
+          <i data-icon="reset"></i>
+          重载示例
+        </button>
+        <button class="primary-btn" data-nav="graph">
+          生成图谱
+          <i data-icon="arrow"></i>
+        </button>
+      </header>
+
+      <main class="content">
+        <section class="view active" id="view-upload">
+          <div class="page-head">
+            <div>
+              <h1>个人材料导入</h1>
+              <p class="lead">简历、成绩单、自我介绍已就绪，可直接进入能力分析。</p>
+            </div>
+            <button class="primary-btn" id="loadSampleBtn">
+              <i data-icon="refresh"></i>
+              使用示例档案
+            </button>
+          </div>
+
+          <div class="upload-grid">
+            <div class="panel upload-panel">
+              <div class="drop-zone" id="dropZone">
+                <input type="file" id="fileInput" hidden
+                  accept=".pdf,.doc,.docx,.txt">
+                <div class="drop-icon" data-icon="cloud"></div>
+                <div class="drop-title">拖拽材料到这里</div>
+                <div class="drop-sub">PDF / Word(.docx) / txt</div>
+                <button class="outline-btn" id="pickFileBtn">选择文件</button>
+              </div>
+              <div class="file-head">
+                <h3>上传记录</h3>
+                <div class="file-head-right">
+                  <span id="fileCount">0 个文件</span>
+                  <button class="ghost-btn small-btn" id="clearUploadedBtn" hidden>
+                    <i data-icon="trash"></i>
+                    清空已上传
+                  </button>
+                </div>
+              </div>
+              <ul class="file-list" id="fileList"></ul>
+            </div>
+
+            <div class="stack">
+              <div class="panel pipeline">
+                <div class="panel-title">
+                  <h3>解析流水线</h3>
+                  <span class="text-ok">全部完成</span>
+                </div>
+                <ol class="pipeline-list">
+                  <li class="done"><i data-icon="check"></i><span>文件清洗与OCR</span><small>已完成</small></li>
+                  <li class="done"><i data-icon="check"></i><span>简历结构解析</span><small>已完成</small></li>
+                  <li class="done"><i data-icon="check"></i><span>能力抽取与归一化</span><small>已完成</small></li>
+                </ol>
+              </div>
+
+              <div class="panel next-panel">
+                <div class="next-title">
+                  <span class="next-kicker">下一步</span>
+                  <strong>生成个人能力图谱</strong>
+                </div>
+                <p>系统已将材料和项目经历整理为结构化能力节点。</p>
+                <button class="primary-btn block" data-nav="graph">进入能力图谱</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="view-graph">
+          <div class="page-head graph-head">
+            <div>
+              <h1>能力图谱</h1>
+              <p class="lead">点击节点查看能力来源，支持缩放、平移与类别筛选。</p>
+            </div>
+            <div class="segmented" id="graphModeTabs">
+              <button class="active" data-mode="personal">个人能力图谱</button>
+              <button data-mode="job">岗位能力图谱</button>
+            </div>
+          </div>
+
+          <div class="panel graph-toolbar">
+            <div class="search-box">
+              <i data-icon="search"></i>
+              <input id="graphSearch" type="search" placeholder="搜索技能或项目">
+            </div>
+            <div class="filter-row" id="graphFilters"></div>
+            <div class="toolbar-actions">
+              <button class="icon-btn" id="zoomOutBtn" title="缩小" aria-label="缩小"><i data-icon="minus"></i></button>
+              <button class="icon-btn" id="zoomInBtn" title="放大" aria-label="放大"><i data-icon="plus"></i></button>
+              <button class="icon-btn" id="fitBtn" title="适应画布" aria-label="适应画布"><i data-icon="fit"></i></button>
+            </div>
+          </div>
+
+          <div class="graph-grid">
+            <div class="panel graph-stage">
+              <div class="graph-canvas" id="graphCanvas"></div>
+              <div class="graph-hint">
+                <span id="graphNodeCount">0 个节点</span>
+                <span id="graphLinkCount">0 条关系</span>
+              </div>
+            </div>
+            <aside class="panel detail-panel" id="graphDetail">
+              <div class="detail-empty">
+                <div class="detail-symbol" data-icon="graph"></div>
+                <h3>选择节点查看详情</h3>
+                <p>硬技能、软技能、项目与证书会在这里展示证据来源。</p>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-match">
+          <div class="page-head">
+            <div>
+              <h1>人岗匹配</h1>
+              <p class="lead">选择目标岗位后查看双向匹配得分与能力差距。</p>
+            </div>
+            <div class="score-grade" id="scoreGrade">较匹配</div>
+          </div>
+
+          <div class="panel job-board">
+            <div class="board-head">
+              <h3>图谱匹配推荐</h3>
+              <span>按 graph_match.py 对 359 份岗位图谱排序</span>
+            </div>
+            <div class="job-cards" id="jobCards"></div>
+          </div>
+
+          <div class="match-grid">
+            <div class="panel algorithm-panel">
+              <div class="panel-title">
+                <div>
+                  <h3>能力覆盖匹配</h3>
+                  <span class="sub">后端 graph_match.py 清单覆盖口径</span>
+                </div>
+                <span class="algo-badge">覆盖对齐</span>
+              </div>
+              <div class="score-bars algorithm-bars" id="coverageBars"></div>
+              <div class="formula-line" id="matchFormula"></div>
+            </div>
+
+            <div class="match-column">
+              <div class="panel match-score-panel">
+                <div class="big-score">
+                  <strong id="matchTotal">78</strong>
+                  <span>适配度得分</span>
+                </div>
+                <div class="score-foot" id="scoreFoot"></div>
+              </div>
+
+              <div class="panel job-focus">
+                <div class="focus-title">
+                  <h3 id="focusJobTitle">AI算法工程师（智能制造）</h3>
+                  <span id="focusJobMeta">星川智造 · 深圳 · 18-28K</span>
+                </div>
+                <p id="focusJobDesc">负责锂电池产线视觉质检、能耗预测与AI模型在工业现场的落地。</p>
+                <div class="tag-row" id="focusJobTags"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel gap-panel">
+            <div class="panel-title">
+              <div>
+                <h3>能力差距与证据</h3>
+                <span class="sub">按岗位要求优先级排列</span>
+              </div>
+              <button class="ghost-btn" data-nav="path">
+                去补学习路线
+                <i data-icon="arrow"></i>
+              </button>
+            </div>
+            <div class="gap-list" id="gapList"></div>
+          </div>
+        </section>
+
+        <section class="view" id="view-path">
+          <div class="page-head">
+            <div>
+              <h1>学习路线</h1>
+              <p class="lead">围绕岗位缺口生成由浅入深的补充计划。</p>
+            </div>
+            <button class="ghost-btn" data-nav="report">
+              查看诊断报告
+              <i data-icon="arrow"></i>
+            </button>
+          </div>
+
+          <div class="panel path-target" id="pathTarget"></div>
+          <div class="path-layout" id="pathLayout"></div>
+        </section>
+
+        <section class="view report-view" id="view-report">
+          <div class="report-toolbar">
+            <div>
+              <h1>求职适配诊断报告</h1>
+              <p class="lead">预览版式与导出版式保持一致，可直接打印为PDF。</p>
+            </div>
+            <button class="primary-btn" id="exportPdfBtn">
+              <i data-icon="download"></i>
+              导出PDF
+            </button>
+          </div>
+          <article class="report-sheet" id="reportSheet"></article>
+        </section>
+      </main>
+    </section>
+  </div>
+  <script src="api-config.js"></script>
+  <script src="app.js?v=11"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+ "hard_requirements": {
+  "学历": "硕士",
+  "经验年限": 0,
+  "专业限制": "计算机、电子工程、自动化、应用数学、统计学、信息处理",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [
+   "C++",
+   "Hadoop",
+   "Hive",
+   "Java",
+   "MATLAB",
+   "Python",
+   "Scala",
+   "Spark",
+   "学习能力",
+   "数据挖掘",
+   "机器学习",
+   "深度学习",
+   "算法"
+  ],
+  "工具": [
+   "Hadoop",
+   "Hive",
+   "MATLAB",
+   "Python",
+   "Scala",
+   "Spark"
+  ],
+  "软技能": [
+   "学习能力"
+  ]
+ },
+ "evidence": {
+  "C++": "至少掌握C/C++、Java、OpenCV、MATLAB、S",
+  "Hadoop": "熟悉Hadoop、Spark、MapReduce、Hive、",
+  "Hive": "熟悉Hadoop、Spark、MapReduce、Hive、",
+  "Java": "至少掌握C/C++、Java、OpenCV、MATLAB、S",
+  "MATLAB": "至少掌握C/C++、Java、OpenCV、MATLAB、S",
+  "Python": "至少掌握C/C++、Java、OpenCV、MATLAB、S",
+  "Scala": "至少掌握C/C++、Java、OpenCV、MATLAB、S",
+  "Spark": "熟悉Hadoop、Spark、MapReduce、Hive、",
+  "学习能力": "具备较强的学习能力",
+  "数据挖掘": "了解数据挖掘相关理论",
+  "机器学习": "负责机器学习、深度学习等算法模型的设计、训练、调优与工程化落",
+  "深度学习": "负责机器学习、深度学习等算法模型的设计、训练、调优与工程化落",
+  "算法": "负责机器学习、深度学习等算法模型的设计、训练、调优与工程化落"
+ },
+ "doc_id": "JD-207",
+ "doc_type": "jd"
+}

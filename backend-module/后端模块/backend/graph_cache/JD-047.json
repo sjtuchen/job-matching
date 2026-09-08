@@ -1,0 +1,28 @@
+{
+ "hard_requirements": {
+  "学历": "博士",
+  "经验年限": 0,
+  "专业限制": "计算机、人工智能、自然语言处理、软件工程、数学",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [
+   "C++",
+   "Java",
+   "Prompt",
+   "Python",
+   "大模型"
+  ],
+  "工具": [],
+  "软技能": []
+ },
+ "evidence": {
+  "C++": "精通Python/Java/C++中至少一种语言",
+  "Java": "精通Python/Java/C++中至少一种语言",
+  "Prompt": "负责运营分析平台AI服务的架构设计与工程化落地",
+  "Python": "精通Python/Java/C++中至少一种语言",
+  "大模型": "熟悉PyTorch/TensorFlow及大模型推理框架"
+ },
+ "doc_id": "JD-047",
+ "doc_type": "jd"
+}

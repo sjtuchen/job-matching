@@ -1,0 +1,47 @@
+{
+ "hard_requirements": {
+  "学历": "博士",
+  "经验年限": 0,
+  "专业限制": "电子、通信、计算机相关专业",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [],
+  "工具": [
+   "Axure",
+   "CAD",
+   "CorelDRAW",
+   "Figma",
+   "Illustrator",
+   "Photoshop",
+   "Power BI",
+   "Sketch",
+   "SolidWorks",
+   "Visio"
+  ],
+  "软技能": [
+   "学习能力",
+   "抗压",
+   "沟通",
+   "责任心"
+  ]
+ },
+ "evidence": {
+  "Axure": "配合产品总监，完成AI智能硬件产品目标人群、目标市场地定位",
+  "CAD": "硬件产品规格",
+  "CorelDRAW": "定义硬件产品规格",
+  "Figma": "产品策划",
+  "Illustrator": "竞品研究",
+  "Photoshop": "竞品研究",
+  "Power BI": "产品运营",
+  "Sketch": "产品策划",
+  "SolidWorks": "硬件产品规格",
+  "Visio": "产品策划",
+  "学习能力": "对智能硬件产品具有强烈的兴趣，具有良好的学习能力",
+  "抗压": "具有良好的抗压能力",
+  "沟通": "具有良好的沟通能力",
+  "责任心": "具有良好的责任心"
+ },
+ "doc_id": "JD-061",
+ "doc_type": "jd"
+}

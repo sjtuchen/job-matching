@@ -1,0 +1,39 @@
+{
+ "hard_requirements": {
+  "学历": "大专",
+  "经验年限": 0,
+  "专业限制": "",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [],
+  "工具": [
+   "C4D",
+   "CAD",
+   "CorelDRAW",
+   "Illustrator",
+   "Photoshop",
+   "Power BI",
+   "Visio"
+  ],
+  "软技能": [
+   "团队合作",
+   "沟通",
+   "责任心"
+  ]
+ },
+ "evidence": {
+  "C4D": "使用C4D进行版图设计",
+  "CAD": "使用CAD进行版图设计",
+  "CorelDRAW": "使用CorelDRAW进行版图设计",
+  "Illustrator": "使用Illustrator进行版图设计",
+  "Photoshop": "使用Photoshop进行版图设计",
+  "Power BI": "使用Power BI进行数据可视化",
+  "Visio": "使用Visio进行版图设计",
+  "团队合作": "配合团队完成工作",
+  "沟通": "协助团队负责人",
+  "责任心": "协助团队负责人完成工作"
+ },
+ "doc_id": "BOSS-NEG-012",
+ "doc_type": "jd"
+}

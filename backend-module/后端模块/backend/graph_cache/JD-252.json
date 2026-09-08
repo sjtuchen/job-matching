@@ -1,0 +1,47 @@
+{
+ "hard_requirements": {
+  "学历": "硕士",
+  "经验年限": 0,
+  "专业限制": "计算机科学与技术、软件工程、物联网工程等相关专业",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [
+   "Hadoop",
+   "Java",
+   "Power BI",
+   "Python",
+   "SQL",
+   "Spark",
+   "Tableau",
+   "数据可视化",
+   "机器学习",
+   "算法"
+  ],
+  "工具": [
+   "Hadoop",
+   "Java",
+   "Power BI",
+   "Python",
+   "SQL",
+   "Spark",
+   "Tableau"
+  ],
+  "软技能": []
+ },
+ "evidence": {
+  "Hadoop": "了解大数据平台",
+  "Java": "熟悉Java、Python等编程语言",
+  "Power BI": "熟悉数据可视化工具",
+  "Python": "熟悉Java、Python等编程语言",
+  "SQL": "掌握SQL语言",
+  "Spark": "了解大数据平台",
+  "Tableau": "熟悉数据可视化工具",
+  "数据可视化": "熟悉数据可视化工具",
+  "机器学习": "了解大数据平台及机器学习算法者优先",
+  "算法": "了解大数据平台及机器学习算法者优先"
+ },
+ "doc_id": "JD-252",
+ "doc_type": "jd",
+ "_cleaned": "确定性清洗 5 词"
+}

@@ -1,0 +1,31 @@
+{
+ "hard_requirements": {
+  "学历": "本科",
+  "经验年限": 0,
+  "专业限制": "",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [
+   "Power BI",
+   "Python",
+   "SQL",
+   "Tableau",
+   "提示词"
+  ],
+  "工具": [],
+  "软技能": [
+   "英语"
+  ]
+ },
+ "evidence": {
+  "Power BI": "具备 Tableau、Power BI 等数据可视化 BI ",
+  "Python": "熟练掌握 Linux 环境及 Python 编程",
+  "SQL": "掌握 R 语言/精通 SQL",
+  "Tableau": "具备 Tableau、Power BI 等数据可视化 BI ",
+  "提示词": "精通提示词工程，落地并调优主流大语言模型",
+  "英语": "流利的英语沟通能力"
+ },
+ "doc_id": "JD-049",
+ "doc_type": "jd"
+}

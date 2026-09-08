@@ -1,0 +1,40 @@
+{
+ "hard_requirements": {
+  "学历": "本科",
+  "经验年限": 0,
+  "专业限制": "新闻学、编辑出版学",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [
+   "数据分析能力",
+   "文案",
+   "视频号"
+  ],
+  "工具": [
+   "CorelDRAW",
+   "Illustrator",
+   "Photoshop",
+   "剪辑",
+   "视频剪辑"
+  ],
+  "软技能": [
+   "学习能力",
+   "沟通"
+  ]
+ },
+ "evidence": {
+  "数据分析能力": "具备基本的数据分析能力",
+  "文案": "具备良好的文字功底和文案撰写能力",
+  "视频号": "熟悉视频号平台规则和运营技巧",
+  "CorelDRAW": "熟练掌握 Photoshop、Illustrator、Cor",
+  "Illustrator": "熟练掌握 Photoshop、Illustrator、Cor",
+  "Photoshop": "熟练掌握 Photoshop、Illustrator、Cor",
+  "剪辑": "掌握视频剪辑软件（如剪映、Pr、AE 等）",
+  "视频剪辑": "掌握视频剪辑软件（如剪映、Pr、AE 等）",
+  "学习能力": "具有较好的学习能力和沟通能力",
+  "沟通": "具有较好的学习能力和沟通能力"
+ },
+ "doc_id": "JD-078",
+ "doc_type": "jd"
+}

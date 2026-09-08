@@ -1,0 +1,62 @@
+{
+ "hard_requirements": {
+  "学历": "硕士",
+  "经验年限": 0,
+  "专业限制": "机械工程、机械、工业工程、计算机、人工智能",
+  "证书": []
+ },
+ "skill_groups": {
+  "专业技能": [
+   "ERP",
+   "MES"
+  ],
+  "工具": [
+   "Axure",
+   "CAD",
+   "CorelDRAW",
+   "Figma",
+   "Illustrator",
+   "MATLAB",
+   "Photoshop",
+   "Power BI",
+   "Sketch",
+   "SolidWorks",
+   "Visio",
+   "Word"
+  ],
+  "软技能": [
+   "业务理解",
+   "协调",
+   "团队合作",
+   "学习能力",
+   "沟通",
+   "责任心",
+   "项目管理"
+  ]
+ },
+ "evidence": {
+  "ERP": "熟悉制造业ERP",
+  "MES": "熟悉MES",
+  "Axure": "熟悉Axure",
+  "CAD": "熟悉CAD",
+  "CorelDRAW": "熟悉CorelDRAW",
+  "Figma": "熟悉Figma",
+  "Illustrator": "熟悉Illustrator",
+  "MATLAB": "熟悉MATLAB",
+  "Photoshop": "熟悉Photoshop",
+  "Power BI": "熟悉Power BI",
+  "Sketch": "熟悉Sketch",
+  "SolidWorks": "熟悉SolidWorks",
+  "Visio": "熟悉Visio",
+  "Word": "熟悉Word",
+  "业务理解": "负责企业数字化项目需求分析、方案设计和项目实施",
+  "协调": "负责企业数字化项目需求分析、方案设计和项目实施",
+  "团队合作": "负责企业数字化项目需求分析、方案设计和项目实施",
+  "学习能力": "承担过智能制造、工业大数据等领域研究课题",
+  "沟通": "负责企业数字化项目需求分析、方案设计和项目实施",
+  "责任心": "负责智能制造相关工业软件产品的设计、研发等工作",
+  "项目管理": "负责申报工信部、科技部、科工局等相关战略规划项目、基础预研项"
+ },
+ "doc_id": "JD-298",
+ "doc_type": "jd"
+}
