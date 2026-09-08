@@ -50,24 +50,89 @@ st.markdown(
     """
     <style>
     #MainMenu, footer {visibility: hidden;}
-    .block-container {padding-top: 1.2rem; padding-bottom: 2rem;}
-    .stApp {background: #f7faf9;}
-    [data-testid="stSidebar"] {background: #10302b;}
-    [data-testid="stSidebar"] * {color: #eaf5f1;}
-    .brand-title {font-size: 1.5rem; font-weight: 700; letter-spacing: 0;}
-    .subtle {color: #64748b; font-size: .88rem;}
-    .metric-card {
-        border: 1px solid #d9e5e2; border-radius: 8px; padding: 12px 14px;
-        background: white; margin-bottom: 8px;
+    .block-container {padding: 1.1rem 2rem 2rem; max-width: 1400px;}
+    .stApp {background: #eef2f1;}
+    [data-testid="stHeader"] {background: transparent;}
+    [data-testid="stSidebar"] {
+        background: #18201f; min-width: 250px; width: 250px;
+        border-right: 1px solid rgba(255,255,255,.08);
     }
-    .score-pill {
-        display: inline-block; border-radius: 999px; padding: 2px 10px;
-        background: #d9f3ec; color: #0f766e; font-weight: 600;
+    [data-testid="stSidebar"] > div:first-child {padding: 22px 14px 16px;}
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {color: #f3f7f6;}
+    [data-testid="stSidebar"] hr {border-color: rgba(255,255,255,.12);}
+    [data-testid="stSidebar"] .stRadio [role="radiogroup"] {gap: 4px;}
+    [data-testid="stSidebar"] .stRadio label {
+        display: flex; align-items: center; width: 100%;
+        padding: 10px 12px; border-radius: 8px; color: #bfcac7;
+        background: transparent; transition: background .18s ease, color .18s ease;
+    }
+    [data-testid="stSidebar"] .stRadio label:hover {background: rgba(255,255,255,.07); color: #fff;}
+    [data-testid="stSidebar"] .stRadio label:has(input:checked) {
+        background: #0f766e; color: #fff;
+    }
+    [data-testid="stSidebar"] .stRadio label p {font-weight: 600; margin: 0;}
+    .brand-lockup {display:flex; align-items:center; gap:11px; padding:2px 6px 18px;}
+    .brand-mark {
+        width:40px; height:40px; border-radius:10px; display:grid;
+        place-items:center; background:linear-gradient(135deg,#14b8a6,#0f766e);
+        color:white; font-size:19px; font-weight:800;
+    }
+    .brand-text {display:flex; flex-direction:column; line-height:1.2;}
+    .brand-text strong {font-size:17px; color:#fff; letter-spacing:.04em;}
+    .brand-text span {color:#aebbb8; font-size:11px; margin-top:4px;}
+    .top-progress {
+        display:flex; align-items:center; justify-content:flex-end;
+        gap:7px; color:#93a09d; font-size:12px; padding:8px 0;
+    }
+    .top-progress .step {padding:3px 8px; border-radius:999px;}
+    .top-progress .step.on {background:#dff2ed; color:#0f766e; font-weight:600;}
+    .top-progress .line {width:18px; height:1px; background:#d9e2df;}
+    .page-head {
+        display:flex; align-items:flex-end; justify-content:space-between;
+        gap:20px; margin:2px 0 18px;
+    }
+    .page-head h1 {font-size:27px; line-height:1.15; margin:0; color:#17211f; letter-spacing:0;}
+    .page-head p {color:#687472; margin:8px 0 0; font-size:14px;}
+    .ghost-btn, .primary-btn {
+        display:inline-flex; align-items:center; justify-content:center; gap:7px;
+        border-radius:8px; padding:9px 14px; font-weight:600; border:1px solid #b8cfca;
+        background:#fff; color:#0b5d57; cursor:pointer;
+    }
+    .primary-btn {
+        background:#0f766e; border-color:#0f766e; color:#fff;
+        box-shadow:0 6px 16px rgba(15,118,110,.18);
+    }
+    [data-testid="stButton"] button {
+        border-radius:8px; border:1px solid #b8cfca; background:#fff;
+        color:#0b5d57; font-weight:600;
+    }
+    [data-testid="stButton"] button[kind="primary"] {
+        background:#0f766e; border-color:#0f766e; color:#fff;
+        box-shadow:0 6px 16px rgba(15,118,110,.18);
+    }
+    [data-testid="stMetric"] {
+        background:#fff; border:1px solid #dfe7e4; border-radius:8px;
+        padding:13px 14px; box-shadow:0 8px 20px rgba(25,43,39,.04);
+    }
+    [data-testid="stMetricLabel"] {color:#687472;}
+    [data-testid="stMetricValue"] {color:#17211f;}
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        background:#fff; border:1px solid #dfe7e4; border-radius:8px;
+        box-shadow:0 8px 22px rgba(25,43,39,.04);
+    }
+    [data-testid="stExpander"] {
+        background:#fff; border:1px solid #dfe7e4; border-radius:8px;
     }
     .skill-chip {
-        display: inline-block; border: 1px solid #cbd5e1; border-radius: 6px;
-        padding: 2px 8px; margin: 2px 4px 2px 0; background: white;
+        display:inline-block; border:1px solid #d6e2df; border-radius:6px;
+        padding:3px 9px; margin:2px 5px 2px 0; background:#f7f9f8;
+        color:#26312f; font-size:13px;
     }
+    .report-kv {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
+    .kv-item {background:#f7f9f8; border:1px solid #e4ebe8; border-radius:8px; padding:9px 11px;}
+    .kv-item small {color:#87938f;}
+    .kv-item strong {color:#17211f; display:block; margin-top:2px;}
+    h1,h2,h3 {letter-spacing:0 !important;}
     </style>
     """,
     unsafe_allow_html=True,
@@ -96,14 +161,39 @@ def init_state():
 init_state()
 
 PAGE_NAMES = [
-    "材料导入与诊断",
-    "个人能力图谱",
+    "材料导入",
+    "能力图谱",
     "岗位匹配",
     "学习路线",
     "诊断报告",
 ]
 
-page = st.sidebar.radio("功能导航", PAGE_NAMES)
+st.sidebar.markdown(
+    """
+    <div class="brand-lockup">
+      <div class="brand-mark">图</div>
+      <div class="brand-text"><strong>智职图谱</strong><span>求职适配诊断平台</span></div>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+page = st.sidebar.radio("工作台", PAGE_NAMES)
+
+
+def page_header(title, lead):
+    page_index = PAGE_NAMES.index(page)
+    step_labels = ["1 导入", "2 图谱", "3 匹配", "4 路线", "5 报告"]
+    progress = []
+    for index, label in enumerate(step_labels):
+        css = "step on" if index == page_index else "step"
+        progress.append(f'<span class="{css}">{label}</span>')
+        if index < len(step_labels) - 1:
+            progress.append('<span class="line"></span>')
+    st.markdown(
+        f'<div class="top-progress">{"".join(progress)}</div>'
+        f'<div class="page-head"><div><h1>{title}</h1><p>{lead}</p></div></div>',
+        unsafe_allow_html=True,
+    )
 
 
 def current_payload():
@@ -167,8 +257,10 @@ def show_score_card(job):
 
 
 def render_upload_page():
-    st.title("求职适配诊断平台")
-    st.caption("上传简历 -> 个人能力图谱 -> 岗位匹配 -> 学习路线 -> PDF 报告")
+    page_header(
+        "个人材料导入",
+        "简历、成绩单、自我介绍已就绪，可直接进入能力分析。",
+    )
 
     profile = current_payload().get("profile", {})
     col1, col2, col3, col4 = st.columns(4)
@@ -227,9 +319,11 @@ def render_upload_page():
             )
 
 
-def graph_figure(skills):
+def graph_figure(skills, center_name=None):
     if not skills:
         return None
+    if center_name is None:
+        center_name = current_payload().get("profile", {}).get("name", "用户")
     color_map = {
         "professional": "#0f766e",
         "tool": "#2563eb",
@@ -279,7 +373,7 @@ def graph_figure(skills):
         y=[0],
         mode="markers+text",
         marker=dict(size=22, color="#10302b"),
-        text=[current_payload().get("profile", {}).get("name", "用户")],
+        text=[center_name],
         textposition="bottom center",
         textfont=dict(size=13, color="#10302b"),
         hoverinfo="skip",
@@ -297,9 +391,35 @@ def graph_figure(skills):
 
 
 def render_graph_page():
-    st.title("个人能力图谱")
+    page_header("能力图谱", "点击节点查看能力来源，支持类别筛选与图谱对比。")
+    mode = st.radio(
+        "图谱模式",
+        ["个人能力图谱", "岗位能力图谱"],
+        horizontal=True,
+        label_visibility="collapsed",
+        key="streamlit_graph_mode",
+    )
     profile = current_payload().get("profile", {})
-    skills = current_payload().get("skills", [])
+    job = current_job() or {}
+    if mode == "个人能力图谱":
+        skills = current_payload().get("skills", [])
+        center_name = profile.get("name", "用户")
+    else:
+        required = []
+        for item in (job.get("requirements") or {}).get("required", []):
+            required.append({
+                "name": item.get("name", ""),
+                "type": "professional",
+                "group": "专业技能",
+            })
+        for item in (job.get("requirements") or {}).get("preferred", []):
+            required.append({
+                "name": item.get("name", ""),
+                "type": "soft",
+                "group": "软技能",
+            })
+        skills = required
+        center_name = job.get("title") or "目标岗位"
     projects = current_payload().get("projects", [])
     c1, c2, c3 = st.columns(3)
     c1.metric("候选人", profile.get("name", "-"))
@@ -308,7 +428,7 @@ def render_graph_page():
 
     left, right = st.columns([3, 2])
     with left:
-        fig = graph_figure(skills)
+        fig = graph_figure(skills, center_name=center_name)
         if fig:
             st.plotly_chart(fig, use_container_width=True)
         else:
@@ -398,7 +518,7 @@ def match_rows(job):
 
 
 def render_match_page():
-    st.title("岗位匹配")
+    page_header("岗位匹配", "选择目标岗位，查看总分、能力覆盖、六维雷达与差距。")
     payload = current_payload()
     jobs = payload.get("jobs", [])
     if not jobs:
@@ -440,7 +560,7 @@ def render_match_page():
 
 
 def render_learning_page():
-    st.title("学习路线")
+    page_header("学习路线", "围绕能力缺口生成由浅入深的学习计划。")
     job = current_job()
     if not job:
         st.info("请先在岗位匹配页选择一个岗位。")
@@ -509,7 +629,7 @@ def report_payload_for(job):
 
 
 def render_report_page():
-    st.title("诊断报告")
+    page_header("诊断报告", "查看完整诊断结果，并导出与页面一致的 PDF。")
     payload = current_payload()
     profile = payload.get("profile", {})
     job = current_job()
