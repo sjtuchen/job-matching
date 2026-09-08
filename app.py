@@ -51,10 +51,10 @@ st.markdown(
     <style>
     #MainMenu, footer {visibility: hidden;}
     .block-container {padding: 1.1rem 2rem 2rem; max-width: 1400px;}
-    .stApp {background: #eef2f1;}
+    .stApp {background: #ddeae6;}
     [data-testid="stHeader"] {background: transparent;}
     [data-testid="stSidebar"] {
-        background: #18201f; min-width: 250px; width: 250px;
+        background: #0a1916; min-width: 250px; width: 250px;
         border-right: 1px solid rgba(255,255,255,.08);
     }
     [data-testid="stSidebar"] > div:first-child {padding: 22px 14px 16px;}
@@ -63,10 +63,10 @@ st.markdown(
     [data-testid="stSidebar"] .stRadio [role="radiogroup"] {gap: 4px;}
     [data-testid="stSidebar"] .stRadio label {
         display: flex; align-items: center; width: 100%;
-        padding: 10px 12px; border-radius: 8px; color: #bfcac7;
+        padding: 10px 12px; border-radius: 8px; color: #d9e4e1;
         background: transparent; transition: background .18s ease, color .18s ease;
     }
-    [data-testid="stSidebar"] .stRadio label:hover {background: rgba(255,255,255,.07); color: #fff;}
+    [data-testid="stSidebar"] .stRadio label:hover {background: rgba(255,255,255,.10); color: #fff;}
     [data-testid="stSidebar"] .stRadio label:has(input:checked) {
         background: #0f766e; color: #fff;
     }
@@ -79,7 +79,7 @@ st.markdown(
     }
     .brand-text {display:flex; flex-direction:column; line-height:1.2;}
     .brand-text strong {font-size:17px; color:#fff; letter-spacing:.04em;}
-    .brand-text span {color:#aebbb8; font-size:11px; margin-top:4px;}
+    .brand-text span {color:#a9c7c0; font-size:12px; margin-top:4px;}
     .top-progress {
         display:flex; align-items:center; justify-content:flex-end;
         gap:7px; color:#93a09d; font-size:12px; padding:8px 0;
@@ -91,8 +91,8 @@ st.markdown(
         display:flex; align-items:flex-end; justify-content:space-between;
         gap:20px; margin:2px 0 18px;
     }
-    .page-head h1 {font-size:27px; line-height:1.15; margin:0; color:#17211f; letter-spacing:0;}
-    .page-head p {color:#687472; margin:8px 0 0; font-size:14px;}
+    .page-head h1 {font-size:27px; line-height:1.15; margin:0; color:#08110f; letter-spacing:0;}
+    .page-head p {color:#334945; margin:8px 0 0; font-size:14px; font-weight:500;}
     .ghost-btn, .primary-btn {
         display:inline-flex; align-items:center; justify-content:center; gap:7px;
         border-radius:8px; padding:9px 14px; font-weight:600; border:1px solid #b8cfca;
@@ -114,8 +114,17 @@ st.markdown(
         background:#fff; border:1px solid #dfe7e4; border-radius:8px;
         padding:13px 14px; box-shadow:0 8px 20px rgba(25,43,39,.04);
     }
-    [data-testid="stMetricLabel"] {color:#687472;}
-    [data-testid="stMetricValue"] {color:#17211f;}
+    [data-testid="stMetricLabel"] {color:#30433e; font-weight:700;}
+    [data-testid="stMetricValue"] {color:#071310; font-weight:800;}
+    [data-testid="stMarkdownContainer"], [data-testid="stMarkdownContainer"] p {
+        color:#101c19; font-weight:500;
+    }
+    [data-testid="stCaptionContainer"] {color:#334945; font-weight:500;}
+    [data-testid="stWidgetLabel"] {color:#0e211d; font-weight:700;}
+    [data-testid="stFileUploader"] section, [data-testid="stSelectbox"] button {
+        color:#0a1714; background:#ffffff; border-color:#b9cdc8;
+    }
+    [data-testid="stExpander"] summary, [data-testid="stExpander"] p {color:#0a1714;}
     [data-testid="stVerticalBlockBorderWrapper"] {
         background:#fff; border:1px solid #dfe7e4; border-radius:8px;
         box-shadow:0 8px 22px rgba(25,43,39,.04);
@@ -126,12 +135,12 @@ st.markdown(
     .skill-chip {
         display:inline-block; border:1px solid #d6e2df; border-radius:6px;
         padding:3px 9px; margin:2px 5px 2px 0; background:#f7f9f8;
-        color:#26312f; font-size:13px;
+        color:#0a1714; font-size:13px; font-weight:600;
     }
     .report-kv {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px;}
     .kv-item {background:#f7f9f8; border:1px solid #e4ebe8; border-radius:8px; padding:9px 11px;}
-    .kv-item small {color:#87938f;}
-    .kv-item strong {color:#17211f; display:block; margin-top:2px;}
+    .kv-item small {color:#30433e; font-weight:600;}
+    .kv-item strong {color:#071310; display:block; margin-top:2px;}
     h1,h2,h3 {letter-spacing:0 !important;}
     </style>
     """,
