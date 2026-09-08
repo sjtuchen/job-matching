@@ -133,6 +133,31 @@ st.markdown(
     [data-testid="stFileUploader"] section, [data-testid="stSelectbox"] button {
         color:#0a1714; background:#ffffff; border-color:#b9cdc8;
     }
+    [data-testid="stFileUploader"] section {
+        color:#071310 !important; background:#ffffff !important;
+        border:1.5px dashed #0f766e !important; border-radius:8px;
+    }
+    [data-testid="stFileUploader"] section button {
+        background:#0f766e !important; color:#ffffff !important;
+        border:1px solid #0f766e !important; border-radius:8px;
+        font-weight:700;
+    }
+    [data-testid="stFileUploader"] section [data-testid="stMarkdownContainer"] p,
+    [data-testid="stFileUploader"] section p,
+    [data-testid="stFileUploader"] section span {
+        color:#071310 !important;
+    }
+    [data-testid="stFileUploaderDropzone"],
+    [data-testid="stFileUploaderDropzoneInstructions"] {
+        color:#071310 !important; background:#ffffff !important;
+        font-weight:600;
+    }
+    [data-testid="stHeading"] h1,
+    [data-testid="stHeading"] h2,
+    [data-testid="stHeading"] h3,
+    h1, h2, h3 {
+        color:#071310 !important;
+    }
     [data-testid="stExpander"] summary, [data-testid="stExpander"] p {color:#0a1714;}
     [data-testid="stVerticalBlockBorderWrapper"] {
         background:#fff; border:1px solid #dfe7e4; border-radius:8px;
