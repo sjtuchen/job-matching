@@ -61,16 +61,25 @@ st.markdown(
     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {color: #f3f7f6;}
     [data-testid="stSidebar"] hr {border-color: rgba(255,255,255,.12);}
     [data-testid="stSidebar"] .stRadio [role="radiogroup"] {gap: 4px;}
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] label,
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+    [data-testid="stSidebar"] [data-testid="stWidgetLabel"] {
+        color: #f7fbfa !important;
+    }
     [data-testid="stSidebar"] .stRadio label {
         display: flex; align-items: center; width: 100%;
-        padding: 10px 12px; border-radius: 8px; color: #d9e4e1;
+        padding: 10px 12px; border-radius: 8px; color: #f7fbfa;
         background: transparent; transition: background .18s ease, color .18s ease;
     }
     [data-testid="stSidebar"] .stRadio label:hover {background: rgba(255,255,255,.10); color: #fff;}
     [data-testid="stSidebar"] .stRadio label:has(input:checked) {
         background: #0f766e; color: #fff;
     }
-    [data-testid="stSidebar"] .stRadio label p {font-weight: 600; margin: 0;}
+    [data-testid="stSidebar"] .stRadio label p {
+        font-weight: 700; margin: 0; color: #f7fbfa !important;
+        font-size: 15px;
+    }
     .brand-lockup {display:flex; align-items:center; gap:11px; padding:2px 6px 18px;}
     .brand-mark {
         width:40px; height:40px; border-radius:10px; display:grid;
